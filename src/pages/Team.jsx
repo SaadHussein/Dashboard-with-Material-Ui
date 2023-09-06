@@ -3,8 +3,8 @@ import { DataGrid } from "@mui/x-data-grid";
 import {
   AdminPanelSettingsOutlined,
   LockOpenOutlined,
-  SecurityOutlined,
 } from "@mui/icons-material";
+import { SecurityOutlined } from "@mui/icons-material";
 
 const rows = [
   {
