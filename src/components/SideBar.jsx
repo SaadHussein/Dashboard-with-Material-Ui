@@ -11,6 +11,7 @@ import { styled, useTheme } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
 import HomeIcon from "@mui/icons-material/Home";
 import GroupIcon from "@mui/icons-material/Group";
+import ContactsIcon from "@mui/icons-material/Contacts";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import PersonIcon from "@mui/icons-material/Person";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -76,7 +77,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 const ArrayOne = [
   { text: "Dashboard", icon: <HomeIcon />, path: "/" },
   { text: "Manage Team", icon: <GroupIcon />, path: "/team" },
-  { text: "Contacts Information", icon: <HomeIcon />, path: "/contacts" },
+  { text: "Contacts Information", icon: <ContactsIcon />, path: "/contacts" },
   { text: "Invoices Balances", icon: <ReceiptIcon />, path: "/invoices" },
 ];
 

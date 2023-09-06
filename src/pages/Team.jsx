@@ -90,7 +90,7 @@ const Team = () => {
       headerName: "ID",
       align: "center",
       headerAlign: "center",
-      width: 33,
+      width: 70,
     },
 
     {
