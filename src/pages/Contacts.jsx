@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 
 export const columns = [
-  { field: "id", headerName: "ID", width: 70 },
+  { field: "id", headerName: "ID", width: 69 },
   { field: "registrarId", headerName: "Registrar ID" },
   {
     field: "name",
