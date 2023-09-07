@@ -1,7 +1,7 @@
-import React from "react";
+import ResponsiveGeographyChart from "../components/ResponsiveGeographyChart";
 
 const GeographyChart = () => {
-  return <div>GeographyChart</div>;
+  return <ResponsiveGeographyChart />;
 };
 
 export default GeographyChart;

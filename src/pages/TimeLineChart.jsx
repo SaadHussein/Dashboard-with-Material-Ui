@@ -1,7 +1,7 @@
-import React from "react";
+import ResponsiveTimeLineChart from "../components/ResponsiveTimeLineChart";
 
 const TimeLineChart = () => {
-  return <div>TimeLineChart</div>;
+  return <ResponsiveTimeLineChart />;
 };
 
 export default TimeLineChart;
