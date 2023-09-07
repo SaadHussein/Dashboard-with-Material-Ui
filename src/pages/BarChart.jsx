@@ -1,7 +1,8 @@
+import ResponsiveBarChart from "../components/ResponsiveBarChart";
 import React from "react";
 
 const BarChart = () => {
-  return <div>BarChart</div>;
+  return <ResponsiveBarChart />;
 };
 
 export default BarChart;
