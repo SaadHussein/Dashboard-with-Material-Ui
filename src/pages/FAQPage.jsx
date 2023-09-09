@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import React from "react";
+import Header from "../components/Header";
 
 const FAQPage = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -17,6 +18,7 @@ const FAQPage = () => {
 
   return (
     <Stack direction="column" spacing={2}>
+      <Header title={"FAQ"} subTitle={"Frequently Asked Questions Page"} />
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}

@@ -1,5 +1,6 @@
 import { Box, useTheme } from "@mui/material";
 import { ResponsiveLine } from "@nivo/line";
+import Header from "./Header";
 
 const data = [
   {
@@ -219,10 +220,11 @@ const data = [
     ],
   },
 ];
-const ResponsiveTimeLineChart = () => {
+const ResponsiveTimeLineChart = ({ isDashboard }) => {
   const theme = useTheme();
   return (
-    <Box sx={{ height: "75vh" }}>
+    <Box sx={{ height: isDashboard ? "280px" : "75vh" }}>
+      <Header title={"TimeLine Chart"} subTitle={"Simple TimeLine Chart"} />
       <ResponsiveLine
         data={data}
         curve="catmullRom"
@@ -349,7 +351,7 @@ const ResponsiveTimeLineChart = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "Transportation",
+          legend: isDashboard ? null : "Transportation",
           legendOffset: 40,
           legendPosition: "middle",
         }}
@@ -357,7 +359,7 @@ const ResponsiveTimeLineChart = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: "Count",
+          legend: isDashboard ? null : "Count",
           legendOffset: -50,
           legendPosition: "middle",
         }}

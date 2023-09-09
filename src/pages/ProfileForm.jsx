@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useForm } from "react-hook-form";
+import Header from "../components/Header";
 
 const currencies = [
   {
@@ -68,6 +69,7 @@ const ProfileForm = () => {
       noValidate
       autoComplete="off"
     >
+      <Header title={"Create User"} subTitle={"Create a New User Profile"} />
       <Stack direction="row" spacing={2}>
         <TextField
           error={Boolean(errors.FirstName)}

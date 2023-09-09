@@ -1,10 +1,7 @@
 import * as React from "react";
 import { ThemeProvider, createTheme, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-
 import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-
 import TopBar from "./components/TopBar";
 import SideBar from "./components/SideBar";
 import { getDesignTokens } from "./theme";

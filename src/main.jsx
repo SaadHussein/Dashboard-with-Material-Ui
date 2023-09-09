@@ -19,6 +19,7 @@ import BarChart from "./pages/BarChart";
 import PieChart from "./pages/PieChart";
 import TimeLineChart from "./pages/TimeLineChart";
 import GeographyChart from "./pages/GeographyChart";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="/pie" element={<PieChart />} />
       <Route path="/line" element={<TimeLineChart />} />
       <Route path="/geography" element={<GeographyChart />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );

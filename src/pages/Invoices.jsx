@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
+import Header from "../components/Header";
 
 export const columns = [
   { field: "id", headerName: "ID", width: 69 },
@@ -171,6 +172,7 @@ export const rows = [
 const Contacts = () => {
   return (
     <Box sx={{ height: 600, width: "98%", mx: "auto" }}>
+      <Header title={"Invoices"} subTitle={"List of Invoice Balances"} />
       <DataGrid
         checkboxSelection
         slots={{

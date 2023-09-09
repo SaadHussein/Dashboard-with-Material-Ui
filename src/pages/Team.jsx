@@ -5,6 +5,7 @@ import {
   LockOpenOutlined,
 } from "@mui/icons-material";
 import { SecurityOutlined } from "@mui/icons-material";
+import Header from "../components/Header";
 
 const rows = [
   {
@@ -161,6 +162,7 @@ const Team = () => {
 
   return (
     <Box sx={{ height: 600, width: "98%", mx: "auto" }}>
+      <Header title={"Team"} subTitle={"Managing Team Members"} />
       <DataGrid rows={rows} columns={columns} />
     </Box>
   );
