@@ -45,10 +45,6 @@ const ResponsiveBarChart = ({ isDashboard }) => {
 
   return (
     <Box sx={{ height: isDashboard ? "300px" : "75vh" }}>
-      <Header
-        title={"Bar Chart"}
-        subTitle={"The Minimum Wage in Germany, France and Spain (EUR/Month)"}
-      />
       <ResponsiveBar
         data={data}
         theme={{

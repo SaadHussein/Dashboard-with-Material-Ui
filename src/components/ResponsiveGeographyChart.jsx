@@ -14243,10 +14243,6 @@ const ResponsiveGeographyChart = ({ isDashboard }) => {
   const theme = useTheme();
   return (
     <>
-      <Header
-        title={"Geography"}
-        subTitle={"Geography Simple Geography Chart"}
-      />
       <Box
         sx={{
           height: isDashboard ? "400px" : "75vh",

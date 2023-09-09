@@ -224,7 +224,6 @@ const ResponsiveTimeLineChart = ({ isDashboard }) => {
   const theme = useTheme();
   return (
     <Box sx={{ height: isDashboard ? "280px" : "75vh" }}>
-      <Header title={"TimeLine Chart"} subTitle={"Simple TimeLine Chart"} />
       <ResponsiveLine
         data={data}
         curve="catmullRom"
